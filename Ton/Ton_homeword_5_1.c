@@ -1,15 +1,17 @@
 #include <stdio.h>
 
-#define max 10
+
 int main(){
     int total = 0;
-
-    for (int i = 1; i <= max; i++)
+    int m ,n;
+    printf("m = ");scanf("%d", &m);
+    printf("n = ");scanf("%d", &n);
+    for (int i = m; i <= n; i++)
     {
         if(i % 2 == 0){
             printf("%d ", i);
             total += i;
-            if(i != max){
+            if(i != n && i + 1 != n){
                 printf("+ ");
             }
         }
